@@ -72,7 +72,7 @@ If **`waitress`** is already installed run the following command to run the appl
     waitress-serve --call app:create_app
 
 ## Setup Google Service Account
-Follow the [Using OAuth 2.0 for Server to Server Applications](https://developers.google.com/identity/protocols/oauth2/service-account#python) documentation to [create a service account](https://developers.google.com/identity/protocols/oauth2/service-account#creatinganaccount).
+Follow the [Using OAuth 2.0 for Server to Server Applications](https://developers.google.com/identity/protocols/oauth2/service-account#python) documentation to [create a service account](https://developers.google.com/identity/protocols/oauth2/service-account#creatinganaccount). You must enable **`Drive Api`** and **`Sheet Api`** in the google console.
 
 Download your **Google Service Account JSON** file from google console and rename it to 
 
