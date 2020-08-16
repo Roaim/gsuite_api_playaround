@@ -2,7 +2,20 @@
 
 A sample project to playaround with **GSuite APIs** i.e. Doc, Sheet, etc. using **Python Flask**.
 
-## Environment
+### Demo
+
+Demo is hosted at: 
+
+https://gsapi.roaim.app/sheets
+
+### Documentation: 
+Replace `{{host}}` with the following value:
+
+    "host": "https://gsapi.roaim.app"
+
+**DOC:** [sheet.http](http/sheet.http)
+
+## Environment Setup
 
 Create project directory
 
