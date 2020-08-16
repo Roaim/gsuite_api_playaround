@@ -2,11 +2,11 @@ GET {{host}}/sheets
 
 ###
 
-GET {{host}}/sheets/1FFWIDHigL5uztBEAxVaVUpywgp9WPy4Wo3XI5EFKBug?range=Sheet1!A1:J20
+GET {{host}}/sheets/1FFWIDHigL5uztBEAxVaVUpywgp9WPy4Wo3XI5EFKBug?range=Sheet2!A1:J20
 
 ###
 
-POST {{host}}/sheets/1FFWIDHigL5uztBEAxVaVUpywgp9WPy4Wo3XI5EFKBug?range=Sheet1!A1:J20
+POST {{host}}/sheets/1FFWIDHigL5uztBEAxVaVUpywgp9WPy4Wo3XI5EFKBug?range=Sheet2!A1:J20
 Content-Type: application/json
 
 {

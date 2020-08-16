@@ -35,19 +35,29 @@ def get_sheet(sheet_id=None, range_name=None, body=None):
     return result
 
 
+def get_response(sheet_id=None):
+    if not sheet_id:
+        sheet_id = SHEET_ID
+    return {'link': f"https://docs.google.com/spreadsheets/d/{sheet_id}"}
+
+
 def read_sheet(sheet_id=None, range_name=None):
     result = get_sheet(sheet_id, range_name)
     values = result.get('values', [])
+    response = get_response(sheet_id)
     if not values:
-        return 'No data found.'
+        response['message'] = 'No data found.'
     else:
-        return values
+        response['data'] = values
+    return response
 
 
 def write_sheet(body, sheet_id=None, range_name=None):
     result = get_sheet(sheet_id, range_name, body)
     values = result.get('updatedCells')
+    response = get_response(sheet_id)
     if values:
-        return values
+        response['message'] = f"Update count: {values}"
     else:
-        return 'No data updated'
+        response['message'] = 'No data updated'
+    return response
