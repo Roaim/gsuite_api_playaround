@@ -2,7 +2,20 @@
 
 A sample project to playaround with **GSuite APIs** i.e. Doc, Sheet, etc. using **Python Flask**.
 
-## Environment
+### Demo
+
+Demo is hosted at: 
+
+https://gsapi.roaim.app/sheets
+
+### Documentation: 
+Replace `{{host}}` with the following value:
+
+    "host": "https://gsapi.roaim.app"
+
+**DOC:** [sheet.http](http/sheet.http)
+
+## Environment Setup
 
 Create project directory
 
@@ -58,5 +71,13 @@ If **`waitress`** is already installed run the following command to run the appl
 
     waitress-serve --call app:create_app
 
-## Copy Google Service Account JSON file
-Download your **Google Service Account JSON** file from google console and rename it to `gsapipa-1597559125165-8c2be94eb0b8.json` and copy it to `venv/var/app-instance/`.
+## Setup Google Service Account
+Follow the [Using OAuth 2.0 for Server to Server Applications](https://developers.google.com/identity/protocols/oauth2/service-account#python) documentation to [create a service account](https://developers.google.com/identity/protocols/oauth2/service-account#creatinganaccount).
+
+Download your **Google Service Account JSON** file from google console and rename it to 
+
+    gsapipa-1597559125165-8c2be94eb0b8.json 
+
+and copy it to 
+
+    venv/var/app-instance/
